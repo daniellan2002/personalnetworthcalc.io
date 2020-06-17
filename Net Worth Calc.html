@@ -1,127 +1,235 @@
-<header>
-	Please enter values to calculate your total net worth!
-</header>
+
+
+<style type="text/css">
+	.brown-box{
+		background-color: wheat;
+		padding: 20px 10px 20px 650px
+	}
+
+	.gray-box{
+		background-color: lightgray;
+		padding: 10px 40px 20px 40px
+	}
+
+	.text-fields{
+		padding: 10px 10px 20px 40px;
+		font-family: monospace;
+		font-size: 20px
+	}
+	.lightBrown-box{
+		background-color: burlywood;
+		padding: 20px 10px 20px 650px
+	}
+	.lightGray-box{
+		background-color: lightslategray;
+		padding: 20px 40px 20px 40px
+	}
+
+	h1{
+		font-family: monospace;
+		font-size: 40px;
+	}
+
+	h2{
+		font-family: monospace;
+		font-size: 30px;
+	}
+
+	h3{
+		font-family: monospace;
+		font-size: 30px;
+
+	}
+
+	h4{
+		font-family: monospace;
+		font-size: 20px;
+	}
+</style>
 <body>
 
-<h1>
+<h1 onmouseover="introduction()">
 	Personal Net Worth Calculator
 </h1>
 
-<div>
+<div class="brown-box">
 	<h2>
 		Assets
 	</h2>
 
 </div>
-		<h3>
-		Cash and Cash Equivalents
-		</h3>
+		<br>
 
-		<div>
+		<div class="gray-box" >
+			<h4>
+				Cash and Cash Equivalents
+			</h4>
 			<ul>
-				<li>Checking accounts</li>
-				<input type="text" name="Amount" id = "Checking" placeholder="How much?">
-				<li>Savings accounts</li>
-				<input type="text" name="Amount" id = "Savings"placeholder="How much?">
-				<li>Money market account</li>
-				<input type="text" name="Amount" id = "market"placeholder="How much?">
-				<li>Savings bonds</li>
-				<input type="text" name="Amount" id = "bonds"placeholder="How much?">
-				<li>CD's</li>
-				<input type="text" name="Amount" id = "CDs"placeholder="How much?">
-				<li>Cash value of life insurance</li>
-				<input type="text" name="Amount" id = "insurance"placeholder="How much?">
+				<div class="text-fields">
+					<li>Checking accounts</li>
+					<input type="text" name="Amount" id = "Checking" placeholder="How much?">
+				</div>
+				<div class="text-fields">
+					<li>Savings accounts</li>
+					<input type="text" name="Amount" id = "Savings"placeholder="How much?">
+				</div>
+				<div class="text-fields">
+					<li>Money market account</li>
+					<input type="text" name="Amount" id = "market"placeholder="How much?">
+				</div>
+				<div class="text-fields">
+					<li>Savings bonds</li>
+					<input type="text" name="Amount" id = "bonds"placeholder="How much?">
+				</div>	
+				<div class="text-fields">
+					<li>CD's</li>
+					<input type="text" name="Amount" id = "CDs"placeholder="How much?">
+				</div>
+				<div class="text-fields">
+					<li>Cash value of life insurance</li>
+					<input type="text" name="Amount" id = "insurance"placeholder="How much?">
+				</div>
 
-				<li>Total Cash $</li>
-				<input type="text" name="Amount" id = "Cash"placeholder="Total">
-
+				<div class="text-fields">
+					<li>Total Cash $</li>
+					<input type="text" name="Amount" id = "Cash"placeholder="Total">
+				</div>
 			</ul>
 
 		</div>
-		<h3>
+		<h3 class="brown-box">
 			Invested Assets
 		</h3>
-			<div>
+			<div class="gray-box">
 				<h4>Taxable accounts</h4>
 				<ul>
-					
-					<li>Brokerage</li>
-					<input type="text" name="Amount" id = "Brokerage"placeholder="How much?">
-
-					<li>Other:_____</li>
-					<input type="text" name="Amount" id = "investment"placeholder="How much?">
-
+					<div class="text-fields">
+						<li>Brokerage</li>
+						<input type="text" name="Amount" id = "Brokerage"placeholder="How much?">
+					</div>
+					<div class="text-fields">
+						<li>Other:_____</li>
+						<input type="text" name="Amount" id = "investment"placeholder="How much?">
+					</div>
 				</ul>
 
 			</div>
 
 			<div>
-				<h4>
+				<h4 class="brown-box">
 				Retirement accounts
 				</h4>
-
+				<div class="gray-box">
 					<ul>
-						<li>IRA</li>
-						<input type="text" name="Amount" id = "IRA"placeholder="How much?">
-						<li>Roth IRA</li>
-						<input type="text" name="Amount" id = "Roth"placeholder="How much?">
-						<li>401(k) or 403(b)</li>
-						<input type="text" name="Amount" id = "401k"placeholder="How much?">
-						<li>SEP-IRA</li>
-						<input type="text" name="Amount" id = "SEP-IRA"placeholder="How much?">
-						<li>Keogh or other qualified plan</li>
-						<input type="text" name="Amount" id = "Keogh"placeholder="How much?">
-						<li>Pension (vested benefit)</li>
-						<input type="text" name="Amount" id = "Pension"placeholder="How much?">
-						<li>Annuity (accumulated value)</li>
-						<input type="text" name="Amount" id = "Annuity"placeholder="How much?">
+						<div class="text-fields">
+							<li>IRA</li>
+							<input type="text" name="Amount" id = "IRA"placeholder="How much?">
+						</div>
+						<div class="text-fields">
+							<li>Roth IRA</li>
+							<input type="text" name="Amount" id = "Roth"placeholder="How much?">
+						</div>
+						<div class="text-fields">
+							<li>401(k) or 403(b)</li>
+							<input type="text" name="Amount" id = "401k"placeholder="How much?">
+						</div>
+						<div class="text-fields">
+							<li>SEP-IRA</li>
+							<input type="text" name="Amount" id = "SEP-IRA"placeholder="How much?">
+						</div>
+						<div class="text-fields">
+							<li>Keogh or other qualified plan</li>
+							<input type="text" name="Amount" id = "Keogh"placeholder="How much?">
+						</div>
+						<div class="text-fields">	
+							<li>Pension (vested benefit)</li>
+							<input type="text" name="Amount" id = "Pension"placeholder="How much?">
+						</div>
+						<div class="text-fields">
+							<li>Annuity (accumulated value)</li>
+							<input type="text" name="Amount" id = "Annuity"placeholder="How much?">
+						</div>
 					</ul>
+				</div>
 			</div>
 
 			<div>
-				<h4>
+				<h4 class="brown-box">
 				Business ownership Interests
 				</h4>
+				<div class="gray-box">
 					<ul>
-						<li>Real estate (rental property or land)</li>
-						<input type="text" name="Amount" id = "Real estate"placeholder="How much?">
-						<li>Sole propreitorship</li>
-						<input type="text" name="Amount" id = "Sole"placeholder="How much?">
-						<li>Partnership</li>
-						<input type="text" name="Amount" id = "Partnership"placeholder="How much?">
-						<li>C Corporation</li>
-						<input type="text" name="Amount" id = "Corporation"placeholder="How much?">
-						<li>S Corporation</li>
-						<input type="text" name="Amount" id = "Corporation2"placeholder="How much?">
-						<li>Limited liability company</li>
-						<input type="text" name="Amount" id = "Limited"placeholder="How much?">
-						<li>Other:____</li>
-						<input type="text" name="Amount" id = "Business"placeholder="How much?">
-						<li>Total Invested Assets $</li>
-						<input type="text" name="Amount" id = "Invest Asset"placeholder="Total">
+						<div class="text-fields">
+							<li>Real estate (rental property or land)</li>
+							<input type="text" name="Amount" id = "Real estate"placeholder="How much?">
+						</div>
+						<div class="text-fields">
+							<li>Sole propreitorship</li>
+							<input type="text" name="Amount" id = "Sole"placeholder="How much?">
+						</div>
+						<div class="text-fields">
+							<li>Partnership</li>
+							<input type="text" name="Amount" id = "Partnership"placeholder="How much?">
+						</div>
+						<div class="text-fields">
+							<li>C Corporation</li>
+							<input type="text" name="Amount" id = "Corporation"placeholder="How much?">
+						</div>
+						<div class="text-fields">	
+							<li>S Corporation</li>
+							<input type="text" name="Amount" id = "Corporation2"placeholder="How much?">
+						</div>
+						<div class="text-fields">
+							<li>Limited liability company</li>
+							<input type="text" name="Amount" id = "Limited"placeholder="How much?">
+						</div>
+						<div class="text-fields">
+							<li>Other:____</li>
+							<input type="text" name="Amount" id = "Business"placeholder="How much?">
+						</div>
+						<div class="text-fields">
+							<li>Total Invested Assets $</li>
+							<input type="text" name="Amount" id = "Invest Asset"placeholder="Total">
+						</div>
 						
 					</ul>
-														
+				</div>									
 			</div>
-		<h3>Use Assets</h3>
-			<div>
+		<h3 class="brown-box">Use Assets</h3>
+			<div class="gray-box">
 				<ul>
-					<li>Principal home</li>
-					<input type="text" name="Amount" id = "Principal"placeholder="How much?">
-					<li>Vacation home</li>
-					<input type="text" name="Amount" id = "Vacation"placeholder="How much?">
-					<li>Cars, trucks, boats</li>
-					<input type="text" name="Amount" id = "Cars"placeholder="How much?">
-					<li>Home furnishings</li>
-					<input type="text" name="Amount" id = "furnishings"placeholder="How much?">
-					<li>Art, antiques, coins, collectibles</li>
-					<input type="text" name="Amount" id = "Art"placeholder="How much?">
-					<li>Jewelry, furs</li>
-					<input type="text" name="Amount" id = "Jewelry"placeholder="How much?">
-					<li>Other:____</li>
-					<input type="text" name="Amount" id = "Other Use Assets"placeholder="How much?">
-					<li>Total Use Assets</li>
-					<input type="text" name="Amount" id = "Total Use Assets"placeholder="Total">
+					<div class="text-fields">
+						<li>Principal home</li>
+						<input type="text" name="Amount" id = "Principal"placeholder="How much?">
+					</div>
+					<div class="text-fields">
+						<li>Vacation home</li>
+						<input type="text" name="Amount" id = "Vacation"placeholder="How much?">
+					</div>
+					<div class="text-fields">
+						<li>Cars, trucks, boats</li>
+						<input type="text" name="Amount" id = "Cars"placeholder="How much?">
+					</div>
+					<div class="text-fields">
+						<li>Home furnishings</li>
+						<input type="text" name="Amount" id = "furnishings"placeholder="How much?">
+					</div>
+					<div class="text-fields">
+						<li>Art, antiques, coins, collectibles</li>
+						<input type="text" name="Amount" id = "Art"placeholder="How much?">
+					</div>
+					<div class="text-fields">
+						<li>Jewelry, furs</li>
+						<input type="text" name="Amount" id = "Jewelry"placeholder="How much?">
+					</div>
+					<div class="text-fields">
+						<li>Other:____</li>
+						<input type="text" name="Amount" id = "Other Use Assets"placeholder="How much?">
+					</div>
+					<div class="text-fields">
+						<li>Total Use Assets</li>
+						<input type="text" name="Amount" id = "Total Use Assets"placeholder="Total">
+					</div>
 				</ul>
 				<h2>Total Assets: $____</h2>
 				
@@ -129,51 +237,74 @@
 			</div>
 
 		
-	<h2>Liabilities</h2>
+	<h2 class="lightBrown-box">Liabilities</h2>
 		<div>
-			<h3>Current</h3>
-				<div>
+			
+				<div class="gray-box">
+					<h2>Current</h2>
 					<ul>
-						<li>Credit</li>
-						<input type="text" name="Amount" id = "Credit" placeholder="How much?">
-						<li>Estimated income tax owed</li>
-						<input type="text" name="Amount" id = "Income Tax" placeholder="How much?">
-						<li>Other outstanding bills</li>
-						<input type="text" name="Amount" id = "Other Bills" placeholder="How much?">
+						<div class="text-fields">
+							<li>Credit</li>
+							<input type="text" name="Amount" id = "Credit" placeholder="How much?">
+						</div>
+						<div class="text-fields">
+							<li>Estimated income tax owed</li>
+							<input type="text" name="Amount" id = "Income Tax" placeholder="How much?">
+						</div>
+						<div class="text-fields">
+							<li>Other outstanding bills</li>
+							<input type="text" name="Amount" id = "Other Bills" placeholder="How much?">
+						</div>
 
 					</ul>
 				</div>
 
-			<h3>Long Term</h3>
+			<h3 class="lightBrown-box">Long Term</h3>
 
-				<div>
+				<div class="gray-box">
 					<ul>
-						<li>Home mortgage</li>
-						<input type="text" name="Amount" id = "Mortgage" placeholder="How much?">
-						<li>Home equity</li>
-						<input type="text" name="Amount" id = "Equity" placeholder="How much?">
-						<li>Mortgages on rental properties</li>
-						<input type="text" name="Amount" id = "Rental" placeholder="How much?">
-						<li>Car loans</li>
-						<input type="text" name="Amount" id = "Car Loans" placeholder="How much?">
-						<li>Student loans</li>
-						<input type="text" name="Amount" id = "Student loans" placeholder="How much?">
-						<li>Life Insurance policy loans</li>
-						<input type="text" name="Amount" id = "Life Insurance policy loans" placeholder="How much?">
-						<li>Other long-term debt</li>
-						<input type="text" name="Amount" id = "Long-term debt" placeholder="How much?">
+						<div class="text-fields">
+							<li>Home mortgage</li>
+							<input type="text" name="Amount" id = "Mortgage" placeholder="How much?">
+						</div>
+						<div class="text-fields">
+							<li>Home equity</li>
+							<input type="text" name="Amount" id = "Equity" placeholder="How much?">
+						</div>
+						<div class="text-fields">
+							<li>Mortgages on rental properties</li>
+							<input type="text" name="Amount" id = "Rental" placeholder="How much?">
+						</div>
+						<div class="text-fields">
+							<li>Car loans</li>
+							<input type="text" name="Amount" id = "Car Loans" placeholder="How much?">
+						</div>
+						<div class="text-fields">
+							<li>Student loans</li>
+							<input type="text" name="Amount" id = "Student loans" placeholder="How much?">
+						</div>
+						<div class="text-fields">
+							<li>Life Insurance policy loans</li>
+							<input type="text" name="Amount" id = "Life Insurance policy loans" placeholder="How much?">
+						</div>
+						<div class="text-fields">
+							<li>Other long-term debt</li>
+							<input type="text" name="Amount" id = "Long-term debt" placeholder="How much?">
+						</div>
 					</ul>
 				</div>
 		</div>
 
-		<div>
+		<div class="gray-box">
 			<h2>Total Liabilities: $____</h2>
 
 			
 			<button onclick = "calculateTotalLiabilities()">Calculate Total Liabilities</button>
 		</div>
 
-		<div>
+		<br>
+
+		<div class="lightGray-box">
 			<h1>Net Worth: $____</h1>
 			<button onclick="calculateTotalWorth()"> Calculate!</button>
 		</div>
@@ -327,6 +458,10 @@
 					return sum;
 
 
+				}
+
+				function introduction(){
+					alert("Please enter values to calculate your total net worth!")
 				}
 			</script>
 		</div>
