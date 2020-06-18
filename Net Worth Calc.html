@@ -1,6 +1,39 @@
 
+<head>
 
+<link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"
+  />
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+</head>
 <style type="text/css">
+
+	.list-Spacing{
+		padding: 0px 5px 300px 1000px;
+		font-family: Montserrat, Roboto;
+		font-size: 20px
+	}
+	.net-worth-description{
+		padding: 10px 5px 0px 1000px;
+		
+	}
+
+	.thick-brown-border {
+    	border-color: brown;
+    	border-width: 1px;
+    	border-style: solid;
+    	border-radius: 0%;
+  }
+
+	.centerImage{
+		margin: 1em auto;
+		padding: 20px 20px 20px 20px;
+		width:900px;
+		height:600px;
+		
+	}
 	.brown-box{
 		background-color: wheat;
 		padding: 20px 10px 20px 650px
@@ -11,6 +44,10 @@
 		padding: 10px 40px 20px 40px
 	}
 
+	.cornsilk-box{
+		background-color: cornsilk;
+		padding: 10px 40px 20px 40px
+	}
 	.text-fields{
 		padding: 10px 10px 20px 40px;
 		font-family: monospace;
@@ -25,43 +62,103 @@
 		padding: 20px 40px 20px 40px
 	}
 
+	.brown-box2{
+		background-color: wheat;
+		padding: 20px 10px 20px 550px
+	}
+
+	.brown-box3{
+		background-color: wheat;
+		padding: 20px 10px 20px 575px
+	}
+
 	h1{
-		font-family: monospace;
+		font-family: sans-serif;
 		font-size: 40px;
 	}
 
 	h2{
-		font-family: monospace;
+		font-family: sans-serif;
 		font-size: 30px;
+		
+		
 	}
 
 	h3{
-		font-family: monospace;
+		font-family: sans-serif;
 		font-size: 30px;
 
 	}
 
 	h4{
-		font-family: monospace;
+		font-family: sans-serif;
 		font-size: 20px;
 	}
+
+	p{
+		font-family: Montserrat, Roboto;
+		padding: 20px 500px 20px 40px
+
+	}
+
 </style>
 <body>
-
-<h1 onmouseover="introduction()">
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script type="text/javascript">
+	AOS.init({
+				easing: 'ease-out-back',
+				duration: 1000
+			});
+</script>
+<h1 onmouseover="introduction()" class="animate__animated animate__backInDown cornsilk-box lightGray-box">
 	Personal Net Worth Calculator
 </h1>
+	
+	<p>
+		No matter if your net worth is negative or you’re worth millions of dollars, anyone can begin taking steps today to increase his or her net worth. <br> <br>Whether you’re already motivated, or you’re looking for somebody to give you a nudge, anyone can make progress in this area. <br> <br>That’s why we’ve created this calculator to increase your net worth. It is an important step to help you figure out how much you are valued in the market, so you can get an idea to how much you wish to aim for.
+	</p>
 
-<div class="brown-box">
-	<h2>
+<div >
+
+	
+
+	<img src="https://www.giveagradago.com/uploads/1556112789graduate-finance-jobs-planning.jpg" data-aos="fade-up" class="thick-brown-border centerImage" align="left">
+	
+	<br>
+
+	<h2 class="net-worth-description" data-aos="fade-left">
+		Here are 7 branches of net worth:
+	</h2>
+
+	<div class="list-Spacing" data-aos="fade-left">
+		<ul>
+			<li>Assets:</li>
+			<li>Cash and Cash Equivalent</li>
+			<li>Invested Assets</li>
+			<li>Retirement Accounts</li>
+			<li>Business Ownership Interests</li>
+			<li>Use Assets</li>
+			<li>Liabilities:</li>
+			<li>Current Liabilities</li>
+			<li>Long-Term Liabilities</li>
+			
+		</ul>
+	</div>
+</div>
+
+<br>
+
+<div class="brown-box" >
+	<br>
+	<h2 data-aos="fade-down">
 		Assets
 	</h2>
 
 </div>
 		<br>
 
-		<div class="gray-box" >
-			<h4>
+		<div class="gray-box">
+			<h4 >
 				Cash and Cash Equivalents
 			</h4>
 			<ul>
@@ -97,9 +194,12 @@
 			</ul>
 
 		</div>
-		<h3 class="brown-box">
+
+	<div >
+		<h3 class="brown-box3" data-aos="fade-down">
 			Invested Assets
 		</h3>
+	</div>
 			<div class="gray-box">
 				<h4>Taxable accounts</h4>
 				<ul>
@@ -116,9 +216,9 @@
 			</div>
 
 			<div>
-				<h4 class="brown-box">
+				<h3 class="brown-box3" data-aos="fade-down">
 				Retirement accounts
-				</h4>
+				</h3>
 				<div class="gray-box">
 					<ul>
 						<div class="text-fields">
@@ -154,9 +254,9 @@
 			</div>
 
 			<div>
-				<h4 class="brown-box">
+				<h3 class="brown-box2" data-aos="fade-down">
 				Business ownership Interests
-				</h4>
+				</h3>
 				<div class="gray-box">
 					<ul>
 						<div class="text-fields">
@@ -195,7 +295,7 @@
 					</ul>
 				</div>									
 			</div>
-		<h3 class="brown-box">Use Assets</h3>
+		<h3 class="brown-box" data-aos="fade-down">Use Assets</h3>
 			<div class="gray-box">
 				<ul>
 					<div class="text-fields">
@@ -231,17 +331,20 @@
 						<input type="text" name="Amount" id = "Total Use Assets"placeholder="Total">
 					</div>
 				</ul>
-				<h2>Total Assets: $____</h2>
+				<h3 data-aos="zoom-in">Total Assets: $____</h3>
 				
 				<button onclick="calculateTotalAsset()">Calculate Total Assets</button>
 			</div>
+			<br>
 
-		
-	<h2 class="lightBrown-box">Liabilities</h2>
+<div class="lightBrown-box" data-aos="fade-down">
+	<h2>Liabilities</h2>
+</div>
+	<br>
 		<div>
 			
 				<div class="gray-box">
-					<h2>Current</h2>
+					<h3>Current</h3>
 					<ul>
 						<div class="text-fields">
 							<li>Credit</li>
@@ -259,7 +362,7 @@
 					</ul>
 				</div>
 
-			<h3 class="lightBrown-box">Long Term</h3>
+			<h3 class="lightBrown-box" data-aos="fade-down">Long Term</h3>
 
 				<div class="gray-box">
 					<ul>
@@ -296,7 +399,7 @@
 		</div>
 
 		<div class="gray-box">
-			<h2>Total Liabilities: $____</h2>
+			<h3 data-aos="zoom-in">Total Liabilities: $____</h3>
 
 			
 			<button onclick = "calculateTotalLiabilities()">Calculate Total Liabilities</button>
@@ -305,12 +408,13 @@
 		<br>
 
 		<div class="lightGray-box">
-			<h1>Net Worth: $____</h1>
+			<h1 data-aos="fade">Net Worth: $____</h1>
 			<button onclick="calculateTotalWorth()"> Calculate!</button>
 		</div>
 
 		<div>
 			<script type="text/javascript">
+					
 				function calculateTotalWorth(){
 					var x = calculateTotalAsset();
 					var y = calculateTotalLiabilities();
@@ -461,10 +565,10 @@
 				}
 
 				function introduction(){
-					alert("Please enter values to calculate your total net worth!")
+					//alert("Please enter values to calculate your total net worth!")
+
 				}
 			</script>
-		</div>
 
 
 
